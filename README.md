@@ -15,7 +15,7 @@ It requires RVM.
 
 ## How to install
 
-Copy new-project-creator.rb file to your directory when you want to have your Ruby projects. You can rename this file.
+Copy new-project-creator.rb file to your directory where you want to have your Ruby projects. You can rename this file.
 
 ## How to uninstall
 
