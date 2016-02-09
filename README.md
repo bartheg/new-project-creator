@@ -13,7 +13,15 @@ Tested only on Linux.
 
 It requires RVM.
 
-## example of using
+## How to install
+
+Copy new-project-creator.rb file to your directory when you want to have your Ruby projects. You can rename this file.
+
+## How to uninstall
+
+Delete new-project-creator.rb and new-project-creator.projects files.
+
+## How it works (terminal capture)
 
 ```bash
 u@laptop:~/ruby-projects$ ls
