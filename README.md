@@ -111,6 +111,22 @@ u@laptop:~/ruby-projects$ ls
 anotherproject  new-project-creator.projects  new-project-creator.rb
 u@laptop:~/ruby-projects$ cat new-project-creator.projects 
 2.3.0@anotherproject
+u@laptop:~/ruby-projects$ rvm gemset list_all
 
+gemsets for ruby-2.2.1 (found in /home/u/.rvm/gems/ruby-2.2.1)
+=> (default)
+   blog
+   global
+   moron-project
+
+
+gemsets for ruby-2.3.0 (found in /home/u/.rvm/gems/ruby-2.3.0)
+=> (default)
+   blog
+   empty
+   global
+   gosu-test
+   guess-my-number
+   minitesty-w-ruby
 
 ```
