@@ -15,5 +15,7 @@ It requires RVM.
 
 ## example of using
 
-`u@laptop:~/ruby-projects$ ls
-new-project-creator.rb`
+```bash
+u@laptop:~/ruby-projects$ ls
+new-project-creator.rb
+```
