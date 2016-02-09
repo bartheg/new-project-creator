@@ -15,3 +15,4 @@ It requires RVM.
 
 ## example of using
 
+<p style="background: black; color: white;">asdasdasdasdasd</p>
