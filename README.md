@@ -57,6 +57,60 @@ drwxrwxr-x 3 u u 4096 lut  9 20:04 ..
 -rw-rw-r-- 1 u u   43 lut  9 20:04 Gemfile
 -rw-rw-r-- 1 u u   12 lut  9 20:04 .ruby-gemset
 -rw-rw-r-- 1 u u   10 lut  9 20:04 .ruby-version
+u@laptop:~/ruby-projects$ cd superproject/
+ruby-2.2.1 - #gemset created /home/u/.rvm/gems/ruby-2.2.1@superproject
+ruby-2.2.1 - #generating superproject wrappers..........
+u@laptop:~/ruby-projects/superproject$ rvm current
+ruby-2.2.1@superproject
+u@laptop:~/ruby-projects/superproject$ rvm gemset list_all
+
+gemsets for ruby-2.2.1 (found in /home/u/.rvm/gems/ruby-2.2.1)
+   (default)
+   blog
+   global
+   moron-project
+=> superproject
+
+
+gemsets for ruby-2.3.0 (found in /home/u/.rvm/gems/ruby-2.3.0)
+   (default)
+   blog
+   empty
+   global
+   gosu-test
+   guess-my-number
+   minitesty-w-ruby
+
+u@laptop:~/ruby-projects/superproject$ cat .ruby-version
+ruby-2.2.1
+u@laptop:~/ruby-projects/superproject$ cat .ruby-gemset 
+superproject
+u@laptop:~/ruby-projects/superproject$ cat Gemfile 
+source 'https://rubygems.org'
+
+ruby "2.2.1"
+u@laptop:~/ruby-projects/superproject$ cd ..
+u@laptop:~/ruby-projects$ cat new-project-creator.projects 
+2.2.1@superproject
+u@laptop:~/ruby-projects$ rm -fr superproject/
+u@laptop:~/ruby-projects$ ls
+new-project-creator.projects  new-project-creator.rb
+u@laptop:~/ruby-projects$ rvm current
+ruby-2.3.0
+u@laptop:~/ruby-projects$ ruby new-project-creator.rb anotherproject
+Removing gemset superproject......
+A new file new-project-creator.projects was created
+mkdir anotherproject
+cd ./anotherproject
+A new file .ruby-version was created
+A new file .ruby-gemset was created
+A new file Gemfile was created
+cd -
+The file new-project-creator.projects was updated.
+u@laptop:~/ruby-projects$ ls
+anotherproject  new-project-creator.projects  new-project-creator.rb
+u@laptop:~/ruby-projects$ cat new-project-creator.projects 
+2.3.0@anotherproject
 
 
 ```
